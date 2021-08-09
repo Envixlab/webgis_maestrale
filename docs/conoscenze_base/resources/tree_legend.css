@@ -1,0 +1,35 @@
+.tree-list {
+	border-style: none;
+	color: black;
+	font-weight: bold;
+	background-color: rgba(255,0,255,0.1);
+	/*text-shadow: 2px 2px #FFFFFF;*/
+	padding: 0 0 0 30px;
+	width: 370px;
+
+}
+.tree-list li > ul, .tree-list li > ol {
+		display: none;
+		
+		
+	}
+
+	.tree-list input[type="checkbox"] {
+		display: none;
+		position: relative;
+	}
+
+	.tree-list label {
+		position: relative;
+		display: inline-block;
+	}
+
+	.tree-list label:after {
+	content: "►"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: black;
+	}
+
+	.tree-list input[type="checkbox"]:checked + ul, .tree-list input[type="checkbox"]:checked + ol{
+		display: block;
+	}
