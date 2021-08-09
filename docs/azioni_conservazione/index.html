@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<title> Azioni di conservazione </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css" />
+        <link rel="stylesheet" href="./resources/ol3-layerswitcher.css">
+		<link rel="stylesheet" href="./resources/tree_legend.css" />
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        </style>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="resources/OSMBuildings-OL3.js"></script>
+        <script src="./resources/ol3-layerswitcher.js"></script>
+        <script src="layers/Propagazioneeconservazioneexsitudispecienativechecaratterizzanoglihabitatprioritari2270e2250.js"></script><script src="layers/Realizzazioneeapposizionedi400batboxeunbatroostartificialeperchirotteri.js"></script><script src="layers/Protezionedelladunagraticciate.js"></script><script src="layers/Protezionedelleareeumidepasserella.js"></script><script src="layers/Ripristinodeglistagni.js"></script><script src="layers/Riqualificazioneeconservazionedelleduneconginepritagliolegnomorto.js"></script><script src="layers/Riqualificazioneeconservazionedelleduneconginepripiantumazione.js"></script><script src="layers/Protezionedellavandunasbarre.js"></script><script src="layers/Protezionedellavandunapasserelle.js"></script><script src="layers/Ricostituzionedellavegetazionesclerofilladiavanduna.js"></script><script src="layers/Riqualificazionedelsottoboscodellepinetelitoranee.js"></script><script src="layers/EradicazionedellAcaciasalignanellepinetelitoranee.js"></script>
+        <script src="styles/Propagazioneeconservazioneexsitudispecienativechecaratterizzanoglihabitatprioritari2270e2250_style.js"></script><script src="styles/Realizzazioneeapposizionedi400batboxeunbatroostartificialeperchirotteri_style.js"></script><script src="styles/Protezionedelladunagraticciate_style.js"></script><script src="styles/Protezionedelleareeumidepasserella_style.js"></script><script src="styles/Ripristinodeglistagni_style.js"></script><script src="styles/Riqualificazioneeconservazionedelleduneconginepritagliolegnomorto_style.js"></script><script src="styles/Riqualificazioneeconservazionedelleduneconginepripiantumazione_style.js"></script><script src="styles/Protezionedellavandunasbarre_style.js"></script><script src="styles/Protezionedellavandunapasserelle_style.js"></script><script src="styles/Ricostituzionedellavegetazionesclerofilladiavanduna_style.js"></script><script src="styles/Riqualificazionedelsottoboscodellepinetelitoranee_style.js"></script><script src="styles/EradicazionedellAcaciasalignanellepinetelitoranee_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+		<!--inizio logo-->
+			<div id="logo">	
+			<!--<a href="http://lifemaestrale.eu/">-->
+			<img src= "logo.png" style="width:100px;height:70px;">
+			</div>
+		<!--fine logo-->
+		<!--inizio legenda-->
+			<div id="legenda"> 
+				<ol class="tree-list">
+					<li>
+					Mostra legenda <label for="l1"></label><input  id="l1" name="iddd" type="checkbox">
+							<ul>
+								<li> Propagazione e conservazione ex-situ dispecie native che caratterizzano gli habitat prioritari 2270* e 2250*  <label for="L2"></label><input id="L2" type="checkbox">
+									<ul>
+										<img src = "./ico/leaf.png/"> <a> Aree raccolta semi e talee</a>
+									</ul>
+								</li>
+								<li> Realizzazione e apposizione di 400 batbox e un bat roost artificiale per chirotteri <label for="L3"></label><input id="L3" type="checkbox">
+									<ul>
+									<img src = "./ico/bats.png/"> <a> Bat box</a>
+									</ul>
+								</li>
+								<li> Ripristino dello stato di conservazione degli habitat 3170*-1510* Stagni temporanei mediterranei<label for="L4"></label><input id="L4" type="checkbox">
+									<ul>
+									<canvas id="myCanvas" width="30" height="2" style="border:1px solid black; background: #959570"></canvas> <span> Gratticiate </span>
+									<br>
+									<canvas id="myCanvas" width="30" height="2" style="border:1px solid brown; background: #fff8c3"></canvas> <span> Paserella </span>
+									</br>
+									<br>
+									<canvas id="myCanvas" width="30" height="15" style="border:1px solid blue; background: #a6cee3"></canvas> <span> Ripristino degli stagni </span>
+									</br>
+									</ul>
+								</li>
+								<li>
+								Conservazione/riqualificazione dell'habitat 2250* Dune con ginepri  <label for="L5"></label><input id="L5" type="checkbox">
+									<ul>
+										<canvas id="myCanvas" width="30" height="15" style="border:1px solid green; background: #25dd8a"></canvas> <span> Piantumazione </span>
+										<br>
+										<canvas id="myCanvas" width="30" height="15" style="border:1px solid green; background: #ffaa00"></canvas> <span> Taglio legno morto </span>
+										</br>
+									</ul>
+								</li>
+								<li>
+								Protezione dell'avanduna con ricostituzione dell'habitat 2250* Dune con vegetazione di sclerofille del <i>Cisto-Lavanduletalia</i> <label for="L6"></label><input id="L6" type="checkbox">
+									<ul>
+										<img src = "./ico/barrier.png/"> <a> sbarre</a>
+										<br>
+										<canvas id="myCanvas" width="30" height="2" style="border:1px solid brown; background: #fff8c3"></canvas> <span> Passerelle </span>
+										</br>
+										<br>
+										<canvas id="myCanvas" width="30" height="15" style="border:1px solid green; background: #f5f58f"></canvas> <span> Ricostituzione della vegetazione sclerofilla </span>
+										</br>
+									</ul>
+								</li>
+								<li>
+								Riqualificazione dell'habitat 2270* Dune costiere con <i>Pinus pinaster</i> e/o<i>Pinus pinea</i> <label for="L7"></label><input id="L7" type="checkbox">
+									<ul>
+										<canvas id="myCanvas" width="30" height="15" style="border:1px solid brown; background: #bc3fd9"></canvas> <span> Eradicazione dell'<i>Acacia saligna</i> </span>
+										</br>
+										<br>
+										<canvas id="myCanvas" width="30" height="15" style="border:1px solid darkgreen; background: #72c000"></canvas> <span> Riqualificazione del sottobosco </span>
+										</br>
+									</ul>
+								</li>
+							</ul>
+					</li>
+				</ol>
+			</div>
+			<!--fine legenda-->
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="./resources/qgis2web.js"></script>
+        <script src="./resources/Autolinker.min.js"></script>
+<style>
+.tooltip {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+.measure-control {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .measure-control {
+  top: 80px;
+}
+</style>
+    </body>
+</html>
