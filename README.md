@@ -12,6 +12,6 @@ Il Geodatabase del progetto LIFE MAESTRALE (IT/NAT/000262) è ora online e conse
 
 Il Geodatabase è realizzato in formato “ESRI File Geodatabase” e può essere utilizzato con qualsiasi software GIS e CAD. Il Geodatabase è fornito in un cartella compressa protetta da password richiedibile al seguente indirizzo email: demetraprojects@gmail.com. Per maggiori dettagli sull’utilizzo è stata realizzata una guida in formato pdf [Guida-allutilizzo-del-Geodatabase-1.pdf](Guida-allutilizzo-del-Geodatabase-1.pdf).
 
-. [Conoscenze di base del territorio](https://envixlab.github.io/webgis_maestrale/conoscenze_base/)
-. [Azioni cooncrete di conservazione](https://envixlab.github.io/webgis_maestrale/azioni_conservazione/)
-. [Monitoraggio](https://envixlab.github.io/webgis_maestrale/monitoraggio/)
+- [Conoscenze di base del territorio](https://envixlab.github.io/webgis_maestrale/conoscenze_base/)
+- [Azioni cooncrete di conservazione](https://envixlab.github.io/webgis_maestrale/azioni_conservazione/)
+- [Monitoraggio](https://envixlab.github.io/webgis_maestrale/monitoraggio/)
