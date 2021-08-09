@@ -1,6 +1,6 @@
 # webgis_maestrale
 
-Il WebGIS LIFE MAESTRALE è l’estensione web del Sistema Informativo Territoriale MAESTRALE previsto dall’Azione A4 del progetto e rappresenta uno strumento per la comunicazione e la condivisione delle informazioni con diversi tipi di utenti.
+Il WebGIS LIFE MAESTRALE è l’estensione web del Sistema Informativo Territoriale [MAESTRALE](http://lifemaestrale.eu/) previsto dall’Azione A4 del progetto e rappresenta uno strumento per la comunicazione e la condivisione delle informazioni con diversi tipi di utenti.
 
 Le informazioni contenute nel WebGIS LIFE MAESTRALE sono strutturate in tre livelli:
 
